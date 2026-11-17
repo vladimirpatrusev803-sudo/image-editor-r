@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Image Editor — Локальная студия графики, ИИ, DDS и SVG-видео</title>
+  <meta name="description" content="Настольный графический и медиа-редактор для Windows: локальное удаление фона ИИ, 70+ эффектов и 3D LUT, текстуры DDS, сжатие в точный КБ, карточки маркетплейсов и SVG-истории." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark">I</span>
+        <span class="brand-name">image<b>editor</b></span>
+        <span class="brand-badge">v0.1.0</span>
+      </a>
+      <nav class="nav-links" aria-label="Навигация">
+        <a href="#studios" data-i18n="nav.studios">7 студий</a>
+        <a href="#local" data-i18n="nav.local">Локальный движок</a>
+        <a href="#cloud" data-i18n="nav.cloud">Облако и рейтинг</a>
+        <a href="#download" data-i18n="nav.download">Скачать</a>
+      </nav>
+      <div class="topbar-actions">
+        <button id="langToggle" class="gloss-btn gloss-ghost" type="button" aria-label="Switch language">🌐 RU</button>
+        <a class="gloss-btn gloss-primary" href="#download" data-i18n="nav.cta">Скачать .exe</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-card">
+        <div class="hero-eclipse" aria-hidden="true">
+          <div class="hero-orbit"></div>
+          <div class="hero-orbit orbit-two"></div>
+          <div class="hero-sun"></div>
+        </div>
+
+        <div class="hero-content">
+          <div class="eyebrow">
+            <span class="dot"></span>
+            <span data-i18n="hero.eyebrow">IMAGE TOOLS, MADE LOCAL · WINDOWS 10/11 X64</span>
+          </div>
+          <h1 data-i18n="hero.title">Всё для работы с изображениями и видео-историями — <span class="accent">локально на вашем ПК</span></h1>
+          <p class="hero-sub" data-i18n="hero.subtitle">
+            7 профессиональных студий в одном быстром приложении на Rust, Tauri v2, WebGPU, Zig SIMD и ONNX Runtime.
+            Ваши исходники и проекты не покидают компьютер.
+          </p>
+          <div class="hero-cta">
+            <a id="heroDownloadExe" class="gloss-btn gloss-primary gloss-lg" href="#download">
+              <span>⬇</span>
+              <span data-i18n="hero.downloadExe">Скачать для Windows (.exe · 10.1 МБ)</span>
+            </a>
+            <a class="gloss-btn gloss-dark gloss-lg" href="#studios" data-i18n="hero.explore">Посмотреть все 7 студий →</a>
+          </div>
+          <div class="hero-specs">
+            <span class="spec-pill" data-i18n="hero.spec1">⚡ 100% локальная обработка</span>
+            <span class="spec-pill" data-i18n="hero.spec2">✦ ИИ без подписок</span>
+            <span class="spec-pill" data-i18n="hero.spec3">🔌 Встроенный MCP для ИИ-агентов</span>
+            <span class="spec-pill" data-i18n="hero.spec4">☁ Облако пресетов и рейтинг</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="studios" class="section container">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker" data-i18n="studios.kicker">РАБОЧИЕ ПРОСТРАНСТВА</p>
+          <h2 data-i18n="studios.title">7 студий под любые задачи</h2>
+        </div>
+        <div class="filter-pills" role="tablist">
+          <button class="gloss-btn pill active" data-filter="all" type="button" data-i18n="filter.all">Все (7)</button>
+          <button class="gloss-btn pill" data-filter="ai" type="button" data-i18n="filter.ai">ИИ и видео</button>
+          <button class="gloss-btn pill" data-filter="pro" type="button" data-i18n="filter.pro">Графика и цвет</button>
+          <button class="gloss-btn pill" data-filter="ecom" type="button" data-i18n="filter.ecom">Маркетплейсы</button>
+        </div>
+      </div>
+
+      <div class="studios-grid">
+        <article class="studio-card accent-violet" data-cat="ai">
+          <div class="card-top">
+            <span class="studio-icon">✦</span>
+            <span class="studio-tag" data-i18n="s1.tag">ЛОКАЛЬНЫЙ ИИ</span>
+          </div>
+          <h3 data-i18n="s1.title">Удаление фона</h3>
+          <p data-i18n="s1.desc">Нейросеть ONNX / withoutBG прямо на вашем устройстве. Чистые края волос и объектов, прозрачный PNG или новый фон без отправки фото на сервер.</p>
+          <ul class="mini-list">
+            <li data-i18n="s1.b1">Без лимитов на количество вырезок</li>
+            <li data-i18n="s1.b2">Мягкое сглаживание ореолов</li>
+          </ul>
+        </article>
+
+        <article class="studio-card accent-blue" data-cat="pro">
+          <div class="card-top">
+            <span class="studio-icon">↗</span>
+            <span class="studio-tag" data-i18n="s2.tag">РАЗМЕРЫ</span>
+          </div>
+          <h3 data-i18n="s2.title">Размеры и кроп</h3>
+          <p data-i18n="s2.desc">Точное масштабирование с сохранением пропорций, умный кроп под нужные соотношения сторон и пакетная нарезка сотен кадров.</p>
+          <ul class="mini-list">
+            <li data-i18n="s2.b1">Пресеты под соцсети и сторы</li>
+            <li data-i18n="s2.b2">Высококачественный ресемплинг</li>
+          </ul>
+        </article>
+
+        <article class="studio-card accent-cyan" data-cat="pro">
+          <div class="card-top">
+            <span class="studio-icon">⇄</span>
+            <span class="studio-tag" data-i18n="s3.tag">ФОРМАТЫ &amp; DDS</span>
+          </div>
+          <h3 data-i18n="s3.title">Смена формата и DDS</h3>
+          <p data-i18n="s3.desc">Конвертация PNG, JPEG, WebP, BMP, TIFF, GIF, квантование палитр PNG и экспорт игровых текстур DDS (BC1/BC3/BC7) для моддинга и движков.</p>
+          <ul class="mini-list">
+            <li data-i18n="s3.b1">Нативная генерация мипмапов</li>
+            <li data-i18n="s3.b2">Пакетная конвертация папок</li>
+          </ul>
+        </article>
+
+        <article class="studio-card accent-rose" data-cat="pro">
+          <div class="card-top">
+            <span class="studio-icon">◉</span>
+            <span class="studio-tag" data-i18n="s4.tag">ЭФФЕКТЫ &amp; LUT</span>
+          </div>
+          <h3 data-i18n="s4.title">70+ эффектов и цветокор</h3>
+          <p data-i18n="s4.desc">WebGPU-предпросмотр в реальном времени, 3D .cube LUT, плёночная стилизация, AI-резкость, стек эффектов, коллажи и водяные знаки.</p>
+          <ul class="mini-list">
+            <li data-i18n="s4.b1">Двойной клик для сброса ползунка</li>
+            <li data-i18n="s4.b2">Сравнение «До / После» на лету</li>
+          </ul>
+        </article>
+
+        <article class="studio-card accent-emerald" data-cat="pro">
+          <div class="card-top">
+            <span class="studio-icon">⌁</span>
+            <span class="studio-tag" data-i18n="s5.tag">ОПТИМИЗАЦИЯ</span>
+          </div>
+          <h3 data-i18n="s5.title">Сжатие в точный КБ</h3>
+          <p data-i18n="s5.desc">Укажите целевой вес файла (например, до 200 КБ) — движок подберёт оптимальное качество и палитру без заметной потери деталей.</p>
+          <ul class="mini-list">
+            <li data-i18n="s5.b1">Живая оценка размера перед экспортом</li>
+            <li data-i18n="s5.b2">PNG quant + WebP + JPEG</li>
+          </ul>
+        </article>
+
+        <article class="studio-card accent-amber" data-cat="ecom">
+          <div class="card-top">
+            <span class="studio-icon">🛒</span>
+            <span class="studio-tag" data-i18n="s6.tag">МАРКЕТПЛЕЙСЫ + MCP</span>
+          </div>
+          <h3 data-i18n="s6.title">Конструктор карточек</h3>
+          <p data-i18n="s6.desc">Создание карточек для Wildberries и Ozon: ИИ-вырезка товара, объёмные тени, фон, бейджи, инфографика и встроенный MCP-ассистент.</p>
+          <ul class="mini-list">
+            <li data-i18n="s6.b1">7 MCP-инструментов для ИИ-чата</li>
+            <li data-i18n="s6.b2">Батч-экспорт наборов слайдов</li>
+          </ul>
+        </article>
+
+        <article class="studio-card accent-indigo studio-wide" data-cat="ai">
+          <div class="card-top">
+            <span class="studio-icon">🎬</span>
+            <span class="studio-tag" data-i18n="s7.tag">ИИ-ВИДЕО 1–3М</span>
+          </div>
+          <h3 data-i18n="s7.title">SVG Story Studio &amp; Озвучка</h3>
+          <p data-i18n="s7.desc">Студия анимированных векторных видео-историй (30с–3м): 8 готовых шаблонов сцен, встроенный генератор ИИ-сценариев через MCP, TTS-озвучка, живые субтитры и экспорт видео 60 FPS.</p>
+          <ul class="mini-list">
+            <li data-i18n="s7.b1">BYOK и локальные ИИ-модели</li>
+            <li data-i18n="s7.b2">Чистый экспорт без водяных знаков</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="local" class="section container">
+      <div class="split-panel">
+        <div class="split-copy">
+          <p class="section-kicker" data-i18n="local.kicker">АРХИТЕКТУРА</p>
+          <h2 data-i18n="local.title">Почему «локально» — это быстрее и безопаснее</h2>
+          <p data-i18n="local.desc">
+            Вся тяжёлая математика написана на Rust с поддержкой Zig SIMD и WebGPU-шейдеров. Ваши фотографии, PSD/проекты и файлы никогда не уходят на сторонние сервера.
+          </p>
+          <div class="feature-rows">
+            <div class="feature-row">
+              <span class="f-badge">⚡</span>
+              <div>
+                <strong data-i18n="local.f1t">Мгновенный отклик без очередей</strong>
+                <p data-i18n="local.f1d">Никаких «подождите, сервер перегружен» — работает даже в самолёте без интернета.</p>
+              </div>
+            </div>
+            <div class="feature-row">
+              <span class="f-badge">🔒</span>
+              <div>
+                <strong data-i18n="local.f2t">Приватность по умолчанию</strong>
+                <p data-i18n="local.f2d">Никакой телеметрии картинок, истории файлов или скрытого обучения на ваших работах.</p>
+              </div>
+            </div>
+            <div class="feature-row">
+              <span class="f-badge">⌨</span>
+              <div>
+                <strong data-i18n="local.f3t">Палитра команд Ctrl+K и горячие клавиши</strong>
+                <p data-i18n="local.f3d">Мгновенный поиск любого из 70+ эффектов, экспорт, бэкапы проектов и история действий.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="cloud" class="cloud-card">
+          <p class="section-kicker" data-i18n="cloud.kicker">АККАУНТ И СООБЩЕСТВО</p>
+          <h3 data-i18n="cloud.title">Облачная синхронизация и Community Hub</h3>
+          <p data-i18n="cloud.desc">По желанию подключите бесплатный аккаунт внутри приложения (почта подтверждается через Gmail):</p>
+          <ul class="check-list">
+            <li data-i18n="cloud.c1">✓ Синхронизация ваших цветовых пресетов и настроек</li>
+            <li data-i18n="cloud.c2">✓ Очки активности, ежедневные огоньки и 10 достижений</li>
+            <li data-i18n="cloud.c3">✓ Общая таблица рейтинга и обмен пресетами в Community Hub</li>
+            <li data-i18n="cloud.c4">✓ Редактор остаётся полностью рабочим и без входа в аккаунт</li>
+          </ul>
+          <div class="cloud-status">
+            <span class="status-dot"></span>
+            <span data-i18n="cloud.status">Сервер во Франкфурте (eu-central-1) · Активен 24/7</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="download" class="section container">
+      <div class="download-box">
+        <div class="download-main">
+          <p class="section-kicker" data-i18n="dl.kicker">РЕЛИЗ v0.1.0</p>
+          <h2 data-i18n="dl.title">Скачать Premium Image Editor для Windows</h2>
+          <p class="download-desc" data-i18n="dl.desc">
+            Рекомендуем стандартный установщик (.exe) — он сам поставит ярлыки и подготовит приложение к запуску.
+          </p>
+
+          <div class="download-buttons">
+            <a id="btnSetupExe" class="gloss-btn gloss-primary gloss-lg" href="https://github.com/vladimirpatrusev803-sudo/image-editor-r/releases/download/image-editor/Premium-Image-Editor-0.1.0-x64-setup.exe">
+              <span>⬇</span>
+              <span data-i18n="dl.setupBtn">Установщик Windows (.exe · 10.1 МБ)</span>
+            </a>
+            <a id="btnMsi" class="gloss-btn gloss-dark gloss-lg" href="https://github.com/vladimirpatrusev803-sudo/image-editor-r/releases/download/image-editor/Premium-Image-Editor-0.1.0-x64.msi">
+              <span>📦</span>
+              <span data-i18n="dl.msiBtn">MSI-пакет (.msi · 24.6 МБ)</span>
+            </a>
+            <a id="btnReleasesPage" class="gloss-btn gloss-ghost gloss-lg" href="https://github.com/vladimirpatrusev803-sudo/image-editor-r/releases" target="_blank" rel="noopener" data-i18n="dl.allReleases">Релизы на GitHub →</a>
+          </div>
+
+          <div class="smartscreen-tip">
+            <strong data-i18n="dl.smartTitle">💡 Если Windows покажет окно SmartScreen при первом запуске:</strong>
+            <span data-i18n="dl.smartText">это стандартное предупреждение для новых инди-программ без платного EV-сертификата. Нажмите «Подробнее» → «Выполнить в любом случае».</span>
+          </div>
+        </div>
+
+        <div class="download-meta">
+          <div class="meta-item">
+            <span data-i18n="dl.osLabel">Система</span>
+            <strong>Windows 10 / 11 (64-bit)</strong>
+          </div>
+          <div class="meta-item">
+            <span data-i18n="dl.verLabel">Версия</span>
+            <strong>v0.1.0</strong>
+          </div>
+          <div class="meta-item">
+            <span data-i18n="dl.licLabel">Лицензия</span>
+            <strong>Proprietary (EULA)</strong>
+          </div>
+          <div class="meta-item">
+            <span data-i18n="dl.pubLabel">Издатель</span>
+            <strong>Eclipsenior</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <div class="footer-inner">
+      <div>
+        <strong>Premium Image Editor</strong> · © 2026 Eclipsenior ·
+        <span data-i18n="footer.co">Соавтор (ИИ): Antigravity AI (Google DeepMind)</span>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:jhvjkkko@gmail.com">jhvjkkko@gmail.com</a>
+        <span>·</span>
+        <span data-i18n="footer.legal">EULA · Privacy · Terms внутри приложения</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
