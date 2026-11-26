@@ -5,118 +5,119 @@ const DOWNLOAD_CONFIG = {
 };
 
 const I18N = {
-  en: {
-    "nav.studios": "7 Studios",
-    "nav.local": "Local Engine",
-    "nav.cloud": "Cloud & Ranks",
-    "nav.download": "Download",
-    "nav.cta": "Download .exe",
-    "hero.eyebrow": "IMAGE TOOLS, MADE LOCAL · WINDOWS 10/11 X64",
-    "hero.title": "Everything for images & motion stories — <span class='accent'>locally on your PC</span>",
+  ru: {
+    "nav.studios": "7 студий",
+    "nav.local": "Локальный движок",
+    "nav.cloud": "Облако и рейтинг",
+    "nav.download": "Скачать",
+    "nav.cta": "Скачать",
+    "hero.eyebrow": "WINDOWS 10/11 X64 · ЛОКАЛЬНЫЙ ДВИЖОК",
+    "hero.title": "Инструменты для графики и видео с обработкой на вашем ПК",
     "hero.subtitle":
-      "7 specialized studios in one fast desktop app powered by Rust, Tauri v2, WebGPU, Zig SIMD, and ONNX Runtime. Your files never leave your machine.",
-    "hero.downloadExe": "Download for Windows (.exe · 10.1 MB)",
-    "hero.explore": "Explore all 7 studios →",
-    "hero.spec1": "⚡ 100% local processing",
-    "hero.spec2": "✦ AI without subscriptions",
-    "hero.spec3": "🔌 Built-in MCP for AI agents",
-    "hero.spec4": "☁ Cloud presets & leaderboard",
-    "studios.kicker": "WORKSPACES",
-    "studios.title": "7 studios for every workflow",
-    "filter.all": "All (7)",
-    "filter.ai": "AI & Video",
-    "filter.pro": "Graphics & Color",
-    "filter.ecom": "Marketplaces",
-    "s1.tag": "LOCAL AI",
-    "s1.title": "Background Removal",
+      "Семь рабочих студий в одном нативном приложении для Windows на Rust, Tauri v2, WebGPU, Zig SIMD и ONNX Runtime. Файлы не покидают компьютер.",
+    "hero.downloadExe": "Скачать для Windows (.exe · 10.1 МБ)",
+    "hero.explore": "Все 7 студий",
+    "hero.specline": "v0.1.0 · 10.1 МБ · Офлайн · Без телеметрии · MCP",
+    "studios.kicker": "РАБОЧИЕ ПРОСТРАНСТВА",
+    "studios.title": "7 студий под конкретные задачи",
+    "filter.all": "Все (7)",
+    "filter.ai": "ИИ и видео",
+    "filter.pro": "Графика и цвет",
+    "filter.ecom": "Маркетплейсы",
+    "s1.tag": "ЛОКАЛЬНЫЙ ИИ",
+    "s1.title": "Удаление фона",
     "s1.desc":
-      "ONNX / withoutBG neural cutout right on your device. Crisp edges, transparent PNG, or custom background without uploading photos.",
-    "s1.b1": "Unlimited cutouts",
-    "s1.b2": "Smooth halo suppression",
-    "s2.tag": "DIMENSIONS",
-    "s2.title": "Resize & Smart Crop",
+      "Нейросеть ONNX / withoutBG прямо на вашем устройстве. Чёткие края, прозрачный PNG или новый фон без отправки фото на сервер.",
+    "s1.b1": "Без лимитов на вырезку",
+    "s1.b2": "Мягкое сглаживание ореолов",
+    "s2.tag": "РАЗМЕРЫ",
+    "s2.title": "Размеры и кроп",
     "s2.desc":
-      "Exact scaling with aspect-ratio lock, social & store presets, and batch processing for hundreds of images.",
-    "s2.b1": "Social & marketplace aspect presets",
-    "s2.b2": "High-quality resampling",
-    "s3.tag": "FORMATS & DDS",
-    "s3.title": "Format Converter & DDS",
+      "Точное масштабирование с фиксацией пропорций, пресеты под соцсети и маркетплейсы, пакетная нарезка сотен кадров.",
+    "s2.b1": "Пресеты под соцсети и сторы",
+    "s2.b2": "Качественный ресемплинг",
+    "s3.tag": "ФОРМАТЫ И DDS",
+    "s3.title": "Смена формата и DDS",
     "s3.desc":
-      "Convert PNG, JPEG, WebP, BMP, TIFF, GIF, quantize PNG palettes, and export game textures in DDS (BC1/BC3/BC7).",
-    "s3.b1": "Native mipmap generation",
-    "s3.b2": "Batch folder conversion",
-    "s4.tag": "EFFECTS & LUT",
-    "s4.title": "70+ Effects & Color Grading",
+      "Конвертация PNG, JPEG, WebP, BMP, TIFF, GIF, квантование палитр PNG и экспорт игровых текстур DDS (BC1/BC3/BC7).",
+    "s3.b1": "Нативная генерация мипмапов",
+    "s3.b2": "Пакетная конвертация папок",
+    "s4.tag": "ЭФФЕКТЫ И LUT",
+    "s4.title": "60+ эффектов и цветокор",
     "s4.desc":
-      "Real-time WebGPU preview, 3D .cube LUTs, film looks, AI sharpening, effect stack, collages, and watermarks.",
-    "s4.b1": "Double-click slider reset",
-    "s4.b2": "Instant Before / After split",
-    "s5.tag": "OPTIMIZATION",
-    "s5.title": "Target-KB Compression",
+      "WebGPU-предпросмотр в реальном времени, 3D .cube LUT, плёночные луты, AI-резкость, стек эффектов, коллажи и водяные знаки.",
+    "s4.b1": "Сброс ползунка двойным кликом",
+    "s4.b2": "Сравнение «До / После» на лету",
+    "s5.tag": "ОПТИМИЗАЦИЯ",
+    "s5.title": "Сжатие в точный КБ",
     "s5.desc":
-      "Set an exact target file size (e.g., under 200 KB) and let the engine tune quality and palette automatically.",
-    "s5.b1": "Live encoded size estimation",
+      "Укажите целевой вес файла (например, до 200 КБ), и движок автоматически подберёт качество и палитру.",
+    "s5.b1": "Живая оценка размера до сохранения",
     "s5.b2": "PNG quant + WebP + JPEG",
-    "s6.tag": "MARKETPLACES + MCP",
-    "s6.title": "Marketplace Card Builder",
+    "s6.tag": "МАРКЕТПЛЕЙСЫ + MCP",
+    "s6.title": "Конструктор карточек",
     "s6.desc":
-      "Design product cards for WB & Ozon: AI cutout, shadows, backgrounds, badges, infographics, and built-in MCP AI chat.",
-    "s6.b1": "7 MCP tools for AI assistant",
-    "s6.b2": "Batch slide export",
-    "s7.tag": "AI VIDEO 1–3M",
-    "s7.title": "SVG Story Studio & Voiceover",
+      "Карточки товаров для WB и Ozon: ИИ-вырезка, контактные тени, фоны, бейджи, инфографика и встроенный MCP-чат.",
+    "s6.b1": "7 MCP-инструментов для ИИ-агента",
+    "s6.b2": "Пакетный экспорт слайдов",
+    "s7.tag": "ИИ-ВИДЕО 1–3М",
+    "s7.title": "SVG Story Studio и озвучка",
     "s7.desc":
-      "Animated vector video studio (30s–3m): 8 scene templates, built-in MCP script generator, TTS voiceover, live captions, and 60 FPS video export.",
-    "s7.b1": "BYOK & local AI models",
-    "s7.b2": "Clean export with no watermarks",
-    "local.kicker": "ARCHITECTURE",
-    "local.title": "Why local-first is faster and safer",
+      "Студия векторных видео-историй от 30 секунд до 3 минут: 11 шаблонов сцен, сценарии через MCP, озвучка TTS, субтитры и рендер 60 FPS.",
+    "s7.b1": "BYOK и локальные модели",
+    "s7.b2": "Чистый экспорт без водяных знаков",
+    "s7.b3": "Рендер MP4 в 60 FPS через WebCodecs",
+    "s7.b4": "Системная и ИИ-озвучка с таймингами",
+    "local.kicker": "АРХИТЕКТУРА",
+    "local.title": "Почему локальная обработка быстрее и безопаснее",
     "local.desc":
-      "All heavy pixel math runs in native Rust with Zig SIMD and WebGPU shaders. Your photos and project history stay strictly on your disk.",
-    "local.f1t": "Instant response without queues",
-    "local.f1d": "No busy cloud servers — works offline anywhere.",
-    "local.f2t": "Private by default",
-    "local.f2d": "Zero image telemetry, zero file history tracking, zero training on your art.",
-    "local.f3t": "Ctrl+K Command Palette & Shortcuts",
-    "local.f3d": "Jump to any of 70+ effects, batch export, backups, and undo history instantly.",
-    "cloud.kicker": "ACCOUNT & COMMUNITY",
-    "cloud.title": "Optional Cloud Sync & Community Hub",
-    "cloud.desc": "Create a free account inside the app (verified via Gmail):",
-    "cloud.c1": "✓ Sync your color presets and settings",
-    "cloud.c2": "✓ Activity points, daily sparks, and 10 achievements",
-    "cloud.c3": "✓ Global leaderboard and Community Hub preset sharing",
-    "cloud.c4": "✓ Full editor works offline without signing in",
-    "cloud.status": "Frankfurt Server (eu-central-1) · Online 24/7",
-    "dl.kicker": "RELEASE v0.1.0",
-    "dl.title": "Download Premium Image Editor for Windows",
+      "Пиксельные вычисления выполняются в нативном Rust с Zig SIMD и WebGPU-шейдерами. Фотографии и проекты остаются на вашем диске.",
+    "local.f1t": "Мгновенный отклик без очередей",
+    "local.f1d": "Не зависит от загруженности облачных серверов. Работает офлайн.",
+    "local.f2t": "Приватность по умолчанию",
+    "local.f2d": "Нет телеметрии изображений, трекинга файлов или обучения моделей на ваших снимках.",
+    "local.f3t": "Палитра команд Ctrl+K",
+    "local.f3d": "Быстрый переход к любому из 60+ эффектов, батч-экспорту, резервным копиям и истории.",
+    "cloud.kicker": "АККАУНТ И СООБЩЕСТВО",
+    "cloud.title": "Облачная синхронизация и Community Hub",
+    "cloud.desc": "По желанию подключите бесплатный аккаунт внутри приложения (подтверждение по почте):",
+    "cloud.c1": "Синхронизация цветовых пресетов и настроек",
+    "cloud.c2": "Очки активности, ежедневные серии и 10 достижений",
+    "cloud.c3": "Общий рейтинг и обмен пресетами в Community Hub",
+    "cloud.c4": "Весь редактор работает офлайн без входа в аккаунт",
+    "cloud.status": "EU-CENTRAL-1 (ФРАНКФУРТ) · ОНЛАЙН",
+    "dl.kicker": "РЕЛИЗ v0.1.0",
+    "dl.title": "Скачать Premium Image Editor для Windows",
     "dl.desc":
-      "Recommended: standard Windows installer (.exe) — sets up shortcuts and prepares everything automatically.",
-    "dl.setupBtn": "Windows Installer (.exe · 10.1 MB)",
-    "dl.msiBtn": "MSI Package (.msi · 24.6 MB)",
-    "dl.allReleases": "All Releases →",
-    "dl.smartTitle": "💡 If Windows SmartScreen appears on first launch:",
+      "Рекомендуем стандартный установщик (.exe). Он сам создаст ярлыки и подготовит программу к запуску.",
+    "dl.setupBtn": "Установщик Windows (.exe · 10.1 МБ)",
+    "dl.msiBtn": "MSI-пакет (.msi · 24.6 МБ)",
+    "dl.allReleases": "Релизы на GitHub →",
+    "dl.smartTitle": "О предупреждении Windows SmartScreen:",
     "dl.smartText":
-      "this is normal for new indie apps without a paid EV certificate. Click «More info» → «Run anyway».",
-    "dl.osLabel": "Platform",
-    "dl.verLabel": "Version",
-    "dl.licLabel": "License",
-    "dl.pubLabel": "Publisher",
-    "footer.co": "Co-developer (AI): Antigravity AI (Google DeepMind)",
-    "footer.legal": "EULA · Privacy · Terms inside the app",
+      "на новых инди-сборках без платного EV-сертификата система может спросить подтверждение при первом запуске. Нажмите «Подробнее» → «Выполнить в любом случае».",
+    "dl.osLabel": "Система",
+    "dl.verLabel": "Версия",
+    "dl.licLabel": "Лицензия",
+    "dl.pubLabel": "Издатель",
+    "footer.co": "Соавтор (ИИ): Antigravity AI (Google DeepMind)",
+    "footer.legal": "EULA · Privacy · Terms внутри приложения",
   },
 };
 
 function applyDownloadLinks() {
   const setupBtn = document.getElementById("btnSetupExe");
+  const heroBtn = document.getElementById("heroDownloadExe");
   const msiBtn = document.getElementById("btnMsi");
   const releasesBtn = document.getElementById("btnReleasesPage");
   if (setupBtn) setupBtn.setAttribute("href", DOWNLOAD_CONFIG.setupExeUrl);
+  if (heroBtn) heroBtn.setAttribute("href", DOWNLOAD_CONFIG.setupExeUrl);
   if (msiBtn) msiBtn.setAttribute("href", DOWNLOAD_CONFIG.msiUrl);
   if (releasesBtn) releasesBtn.setAttribute("href", DOWNLOAD_CONFIG.releasesUrl);
 }
 
 function setupFilters() {
-  const pills = Array.from(document.querySelectorAll(".filter-pills .pill"));
+  const pills = Array.from(document.querySelectorAll(".filter-pills .filter-pill"));
   const cards = Array.from(document.querySelectorAll(".studio-card"));
   pills.forEach((pill) => {
     pill.addEventListener("click", () => {
@@ -133,24 +134,31 @@ function setupFilters() {
 function setupLanguageToggle() {
   const btn = document.getElementById("langToggle");
   if (!btn) return;
-  const ruCache = {};
+  const enCache = {};
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
-    if (key) ruCache[key] = el.innerHTML;
+    if (key) enCache[key] = el.innerHTML;
   });
 
-  let lang = "ru";
-  btn.addEventListener("click", () => {
-    lang = lang === "ru" ? "en" : "ru";
-    document.documentElement.lang = lang;
-    btn.textContent = lang === "ru" ? "🌐 RU" : "🌐 EN";
-    const dict = lang === "en" ? I18N.en : ruCache;
+  const applyLang = (nextLang) => {
+    document.documentElement.lang = nextLang;
+    btn.textContent = nextLang === "ru" ? "RU" : "EN";
+    const dict = nextLang === "ru" ? I18N.ru : enCache;
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
       if (key && dict[key] !== undefined) {
         el.innerHTML = dict[key];
       }
     });
+  };
+
+  let lang = localStorage.getItem("site_lang") === "ru" ? "ru" : "en";
+  if (lang === "ru") applyLang("ru");
+
+  btn.addEventListener("click", () => {
+    lang = lang === "ru" ? "en" : "ru";
+    localStorage.setItem("site_lang", lang);
+    applyLang(lang);
   });
 }
 
