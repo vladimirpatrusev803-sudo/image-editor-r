@@ -15,9 +15,9 @@ const I18N = {
     "hero.title": "Инструменты для графики и видео с обработкой на вашем ПК",
     "hero.subtitle":
       "Семь рабочих студий в одном нативном приложении для Windows на Rust, Tauri v2, WebGPU, Zig SIMD и ONNX Runtime. Файлы не покидают компьютер.",
-    "hero.downloadExe": "Скачать для Windows (.exe · 10.1 МБ)",
+    "hero.downloadExe": "Скачать для Windows (.exe · 10.9 МБ)",
     "hero.explore": "Все 7 студий",
-    "hero.specline": "v0.1.0 · 10.1 МБ · Офлайн · Без телеметрии · MCP",
+    "hero.specline": "v0.1.0 · 10.9 МБ · Офлайн · Без телеметрии · MCP",
     "studios.kicker": "РАБОЧИЕ ПРОСТРАНСТВА",
     "studios.title": "7 студий под конкретные задачи",
     "filter.all": "Все (7)",
@@ -90,8 +90,8 @@ const I18N = {
     "dl.title": "Скачать Premium Image Editor для Windows",
     "dl.desc":
       "Рекомендуем стандартный установщик (.exe). Он сам создаст ярлыки и подготовит программу к запуску.",
-    "dl.setupBtn": "Установщик Windows (.exe · 10.1 МБ)",
-    "dl.msiBtn": "MSI-пакет (.msi · 24.6 МБ)",
+    "dl.setupBtn": "Установщик Windows (.exe · 10.9 МБ)",
+    "dl.msiBtn": "MSI-пакет (.msi · 25.7 МБ)",
     "dl.allReleases": "Релизы на GitHub →",
     "dl.smartTitle": "О предупреждении Windows SmartScreen:",
     "dl.smartText":
@@ -152,6 +152,7 @@ function setupLanguageToggle() {
     });
   };
 
+  // AI-GUARD: Default website language MUST remain "en". Do NOT change this back to "ru".
   let lang = localStorage.getItem("site_lang") === "ru" ? "ru" : "en";
   if (lang === "ru") applyLang("ru");
 
