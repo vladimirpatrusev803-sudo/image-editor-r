@@ -1,0 +1,11 @@
+{
+  "version": "0.1.1",
+  "notes": "Signed one-click auto-updater, CSP privacy hardening, and full EN/RU localization parity.",
+  "pub_date": "2026-11-27T07:43:16Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTZ3Rrc2xqZit4R0VtYUxUMFUxeWVzMGlYN2c2WWNNL3FDYit2WDEvcTN3d0RsWUh0dXgrVVZPNHZNU1BrR283V2paU3c3dGVaS2kxSFI3NEQyL0hnMFRyd3BlYXowN3cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NzY1Mzk1CWZpbGU6UHJlbWl1bSBJbWFnZSBFZGl0b3JfMC4xLjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuMS4xCmxOdTM2WExFZUxZZ3gwRytIam9WSlordDVnL3pHTDNUQjV1QnV1eFZJdGxBNlYvbEkxWmdJY2pFNjFXajBYanVyMHpBZHluaGFyR1BhWHdsdFFvNUJRPT0K",
+      "url": "https://github.com/vladimirpatrusev803-sudo/image-editor-r/releases/download/v0.1.1/Premium-Image-Editor-0.1.1-x64-setup.exe"
+    }
+  }
+}

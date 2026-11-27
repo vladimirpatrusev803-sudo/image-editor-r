@@ -1,6 +1,6 @@
 const DOWNLOAD_CONFIG = {
-  setupExeUrl: "https://github.com/vladimirpatrusev803-sudo/image-editor-r/releases/download/image-editor/Premium-Image-Editor-0.1.0-x64-setup.exe",
-  msiUrl: "https://github.com/vladimirpatrusev803-sudo/image-editor-r/releases/download/image-editor/Premium-Image-Editor-0.1.0-x64.msi",
+  setupExeUrl: "https://github.com/vladimirpatrusev803-sudo/image-editor-r/releases/download/v0.1.1/Premium-Image-Editor-0.1.1-x64-setup.exe",
+  msiUrl: "https://github.com/vladimirpatrusev803-sudo/image-editor-r/releases/download/v0.1.1/Premium-Image-Editor-0.1.1-x64.msi",
   releasesUrl: "https://github.com/vladimirpatrusev803-sudo/image-editor-r/releases",
 };
 
@@ -15,9 +15,9 @@ const I18N = {
     "hero.title": "Инструменты для графики и видео с обработкой на вашем ПК",
     "hero.subtitle":
       "Семь рабочих студий в одном нативном приложении для Windows на Rust, Tauri v2, WebGPU, Zig SIMD и ONNX Runtime. Файлы не покидают компьютер.",
-    "hero.downloadExe": "Скачать для Windows (.exe · 10.9 МБ)",
+    "hero.downloadExe": "Скачать для Windows (.exe · 11.6 МБ)",
     "hero.explore": "Все 7 студий",
-    "hero.specline": "v0.1.0 · 10.9 МБ · Офлайн · Без телеметрии · MCP",
+    "hero.specline": "v0.1.1 · 11.6 МБ · Офлайн · Без телеметрии · MCP",
     "studios.kicker": "РАБОЧИЕ ПРОСТРАНСТВА",
     "studios.title": "7 студий под конкретные задачи",
     "filter.all": "Все (7)",
@@ -86,12 +86,12 @@ const I18N = {
     "cloud.c3": "Общий рейтинг и обмен пресетами в Community Hub",
     "cloud.c4": "Весь редактор работает офлайн без входа в аккаунт",
     "cloud.status": "EU-CENTRAL-1 (ФРАНКФУРТ) · ОНЛАЙН",
-    "dl.kicker": "РЕЛИЗ v0.1.0",
+    "dl.kicker": "РЕЛИЗ v0.1.1",
     "dl.title": "Скачать Premium Image Editor для Windows",
     "dl.desc":
       "Рекомендуем стандартный установщик (.exe). Он сам создаст ярлыки и подготовит программу к запуску.",
-    "dl.setupBtn": "Установщик Windows (.exe · 10.9 МБ)",
-    "dl.msiBtn": "MSI-пакет (.msi · 25.7 МБ)",
+    "dl.setupBtn": "Установщик Windows (.exe · 11.6 МБ)",
+    "dl.msiBtn": "MSI-пакет (.msi · 26.7 МБ)",
     "dl.allReleases": "Релизы на GitHub →",
     "dl.smartTitle": "О предупреждении Windows SmartScreen:",
     "dl.smartText":
